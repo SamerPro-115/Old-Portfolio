@@ -240,7 +240,8 @@ margin-left: 20px;
         margin: 10px;
     }
     .video{
-        height: 440px !important;
+        margin-top: 50px;
+    height: 350px !important;
     }
     .social-icons{
         margin-top: 0px;
