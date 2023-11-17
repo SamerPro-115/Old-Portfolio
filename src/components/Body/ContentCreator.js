@@ -65,7 +65,7 @@ const ContentCreator = (prop) => {
             style={{position: "relative"}}
             className='video'
           >
-            <source src={`/v-${index + 1}.mp4`} type='video/mp4' />
+            <source src={`/portfolio/v-${index + 1}.mp4`} type='video/mp4' />
           </video>
           <AiOutlinePlayCircle onClick={() => handleVideoClick(index)} className='play-icon' />
           </div>
