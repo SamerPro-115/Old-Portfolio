@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    font-family:'Roboto';
+    overflow-x: hidden !important;
+    
+}
+p{
+    font-family: monospace !important;
+}
+::selection{
+    background: rgb(91, 91, 91);
+}
+.App{
+    background: rgb(5,41,55);
+    background:linear-gradient(29deg, rgba(5,41,55,1) 4%, rgba(22,22,22,1) 93%, rgba(186,186,186,1) 100%); 
+}
+.light-mode-theme{
+    background: rgb(5,41,55);
+    background: linear-gradient(29deg, rgba(5,41,55,1) 12%, rgba(184,184,184,1) 74%, rgba(209,209,209,1) 93%);
+}
+::-webkit-scrollbar {
+    width: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 60px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  ::-webkit-scrollbar-track {
+    background: #313131; 
   }
+  
+.waves svg{
+    height: 145% !important;
+    width: 140% !important;
 }
+.info{
+    margin-bottom: 10rem;
+}
+.logo{
+    margin-top: 3rem;
+    width: 19%;
+    border-radius: 200px;
+    -webkit-box-shadow: -11px 0px 45px -1px rgba(52, 104, 128, 1);
+-moz-box-shadow: -11px 0px 45px -1px rgba(52, 104, 128, 1);
+box-shadow: -11px 0px 45px -1px rgba(52, 104, 128, 1);
+transition: ease-in-out 0.5s;
+
+}
+.logo-light{
+    -webkit-box-shadow: -11px 0px 45px -1px rgb(0, 0, 0);
+-moz-box-shadow: -11px 0px 45px -1px rgb(0, 0, 0);
+box-shadow: -11px 0px 45px -1px rgb(0, 0, 0);
+transition: ease-in-out 0.5s;
+}
+.social-icons{
+    margin-top: 20px;
+   padding: 30px;
+}
+.social-button{
+    width: max-content;
+    padding: 24px;
+}
+.social-logo{
+    width: 2%;
+    height: 100%;
+    color: #1186a3;
+transition: ease-in-out 0.5s;
+
+}
+.social-logo-light{
+    color: #5d5d5d;
+transition: ease-in-out 0.5s;
+
+}
+.video{
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+.play-icon{
+    position: absolute;
+    width: 14%;
+    height: auto;
+    top: 40%;
+    right: 43%;
+    cursor: pointer;
+}
+
+
+.about-me{
+    color: rgb(242, 240, 240);
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 5rem;
+}
+.about-me-title{
+    letter-spacing: 0.75rem;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    width: max-content;
+}
+.about-me-des{
+    padding: 20px;
+}
+.light-text{
+    color: rgb(238 237 237) !important;
+    text-shadow: -3px 7px 6px rgba(0,0,0,0.56) !important;
+transition: ease-in-out 0.5s;
+
+}
+.materials-I-use{
+    color: rgb(242, 240, 240);
+    text-align: left;
+    padding: 20px;
+}
+.material-I-use-title{
+    letter-spacing: 0.75rem;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    width: max-content;
+}
+
+.materials-I-use-des{
+margin-left: 20px;
+}
+.works-title{
+    color: rgb(242, 240, 240);
+    font-weight: bolder;
+    letter-spacing: 0.75rem;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    width: max-content;
+    margin-left: 30px;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+.web-image{
+    border-radius: 20px;
+}
+.content-creator{
+    color: rgb(242, 240, 240);
+    text-align: left;
+    padding: 20px;
+    margin-top: 5rem;
+}
+.content-creator-title{
+    letter-spacing: 0.75rem;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    width: max-content;
+}
+.video{
+    height: 700px;
+    border-radius: 30px;
+}
+.tik{
+    color: #929292;
+}
+.tik-light-mode{
+    color: #f5f5f5;
+}
+.tok{
+    color: #11a4c9;
+}
+.tok-light-mode{
+    color: #00d4c7;
+    
+}
+.tiktok-button{
+    width: 13%;
+    padding: 2px;
+    border: none;
+    transition: ease-in-out 0.5s;
+    background: #146d6f;
+    width: max-content;
+}
+.tiktok-button:hover{
+    font-size: 1.2rem;
+    background: rgb(113 76 127) !important;
+    box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
+-webkit-box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
+-moz-box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
+}
+
+@media screen and (max-width: 992px) {
+    .logo{
+        width: 40%;
+    }
+    .web-name{
+        font-size: 2.5rem;
+    }
+    .web-image{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body-container{
+        margin-top: 4rem;
+    }
+    .info{
+        margin-bottom: 7rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .web-name{
+        font-size: 6vw;
+    }
+    .materials-I-use{
+        padding: 0;
+    }
+    .material-I-use-title{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+
+    }
+    .content-creator-title{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+
+
+    }
+    .about-me-title{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+
+    }
+    .works-title{
+        font-size: 1.3rem;
+        text-align: left;
+        margin-left: 0px;
+        letter-spacing: 0.1rem;
+
+
+    }
+    .image{
+        width: 6% !important;
+    }
+    .web-image{
+        margin: 10px;
+    }
+    .video{
+        height: 500px !important;
+    }
+    .social-icons{
+        margin-top: 0px;
+    }
+    .social-logo{
+        width: 6%;
+    }
+}
+
+
