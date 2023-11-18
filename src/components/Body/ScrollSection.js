@@ -1,6 +1,8 @@
 import React, { useState, useEffect, } from 'react';
 
-function ScrollTriggeredSection({ children, sectionId, isDarkMode }) {
+
+
+function ScrollTriggeredSection({ children, sectionId}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -21,7 +23,7 @@ function ScrollTriggeredSection({ children, sectionId, isDarkMode }) {
 
   return (
     <div
-      className={`${hasAnimated ? 'animate__animated animate__fadeIn' : ''} ${isDarkMode ? '' : 'light-text'}`}
+      className={`${hasAnimated ? 'animate__animated animate__fadeIn' : ''}`}
       id={sectionId}
     >
       {children}

@@ -105,7 +105,7 @@ transition: ease-in-out 0.5s;
     padding: 20px;
 }
 .light-text{
-    color: rgb(238 237 237) !important;
+    color: rgb(238 237 237) ;
     text-shadow: -3px 7px 6px rgba(0,0,0,0.56) !important;
 transition: ease-in-out 0.5s;
 
@@ -123,6 +123,7 @@ transition: ease-in-out 0.5s;
 
 .materials-I-use-des{
 margin-left: 20px;
+text-align: left;
 }
 .works-title{
     color: rgb(242, 240, 240);
@@ -179,6 +180,18 @@ margin-left: 20px;
     box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
 -webkit-box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
 -moz-box-shadow: -17px 5px 41px -6px rgba(12,118,180,0.55);
+}
+.light-text{
+    color: black;
+    font-weight: bold;
+}
+.light-text-content-creator{
+    color: #ababab;
+}
+.tik-tok-des-light{
+    text-align: center;
+    color: #d0d0d0;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 992px) {
@@ -249,6 +262,12 @@ margin-left: 20px;
     .social-logo{
         width: 6%;
     }
+    .videos{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    
 }
 
 

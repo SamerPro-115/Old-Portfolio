@@ -1,9 +1,12 @@
+import {useDarkMode } from '../Body/DarkModeContext.js';
 
 
 
 const AboutMe = (prop) => {
+  const isDarkMode = useDarkMode();
+
     return (
-        <section className={`animate__animated animate__fadeIn about-me ${prop.isDarkMode ? "" : "light-text"}`}>
+        <section className={`animate__animated animate__fadeIn about-me ${isDarkMode ? "" : "light-text"}`}>
 <h1 className="about-me-title">About me ?</h1>
 <p className="about-me-des">
   My name is Samer Mohammed. I'm a web developer who designs and build

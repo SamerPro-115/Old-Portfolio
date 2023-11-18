@@ -1,14 +1,16 @@
 import ScrollTriggeredSection from '../Body/ScrollSection';
+import {useDarkMode } from '../Body/DarkModeContext.js';
 
 
 
 
 const WhatIUseInCoding = () => {
+  const isDarkMode = useDarkMode();
    
 
     return (
         <ScrollTriggeredSection sectionId={'second-section'}>
-       <section className={` materials-I-use`}>
+       <section className={` materials-I-use ${isDarkMode ? "" : "light-text"}`}>
         <h1 className='material-I-use-title'>What I use in coding</h1>
         <p className='materials-I-use-des mt-4'>
             JavaScript<img src='/portfolio/javascript.png' className='image' style={{"marginTop": "-6px"}} width={"2%"} alt='javascript'/>

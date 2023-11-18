@@ -1,14 +1,18 @@
-import React, { useState, useRef } from 'react';
+import React, {useRef } from 'react';
 import {Row, Col, Button} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import {AiOutlinePlayCircle} from "react-icons/ai"
 import ScrollTriggeredSection from '../Body/ScrollSection';
+import {useDarkMode } from '../Body/DarkModeContext.js';
 
 
 
-const ContentCreator = (prop) => {
+const ContentCreator = () => {
     
     const videoRefs = [useRef(null), useRef(null), useRef(null)];
+    
+    const isDarkMode = useDarkMode();
+    
   
     const handleVideoClick = (index) => {
       if (videoRefs[index].current) {
@@ -34,19 +38,19 @@ const ContentCreator = (prop) => {
       <ScrollTriggeredSection sectionId={'fourth-section'}>
         <Row>
                <section className='content-creator' style={{marginBottom: "50px", marginTop:"100px"}}>
-            <h1 className='content-creator-title'>Content creator</h1>
+            <h1 className={`content-creator-title ${isDarkMode ? "" : "light-text-content-creator"}`}>Content creator</h1>
           </section>
 
 
           <Col lg={6} style={{margin:"auto"}}>
-                <h1 className='tik-tok-header'><span className={`tik ${prop.isDarkMode ? "" : "tik-light-mode"}`}>Tik</span><span className={`tok ${prop.isDarkMode ? "" : "tok-light-mode"}`}>Tok</span></h1>
-                <p className='tik-tok-des'>
+                <h1 className='tik-tok-header'><span className={`tik ${isDarkMode ? "" : "tik-light-mode"}`}>Tik</span><span className={`tok ${isDarkMode ? "" : "tok-light-mode"}`}>Tok</span></h1>
+                <p className={`tik-tok-des ${isDarkMode ? "" : "tik-tok-des-light"}`}>
                   As I mentioned earlier I'm a Content creator on TikTok.
                   You can visit my account by clicking <Button href='https://www.tiktok.com/@samerpro_' rel='noreferrer' target='_blank' className='tiktok-button'>here..</Button> 
                 </p>
             </Col>
 
-          <Col lg={6}>
+          <Col lg={6} className='videos'>
           <Carousel interval={null}>
       {videoRefs.map((videoRef, index) => (
         <Carousel.Item key={index}>
@@ -54,7 +58,7 @@ const ContentCreator = (prop) => {
           <video 
             ref={videoRef}
             onClick={() => handleVideoClick(index)}
-            style={{position: "relative", borderRadius: "10px"}}
+            style={{position: "relative", borderRadius: "30px"}}
             className='video'
             preload='metadata'
             poster={`/portfolio/th-${index + 1}.png`}

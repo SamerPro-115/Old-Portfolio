@@ -1,12 +1,15 @@
 import {Image, Row, Col,} from 'react-bootstrap';
 import ScrollTriggeredSection from '../Body/ScrollSection';
+import {useDarkMode } from '../Body/DarkModeContext.js';
 
 
 const Works = (prop) => {
+  const isDarkMode = useDarkMode();
+
     return(
       <ScrollTriggeredSection sectionId={'third-section'}>
         <div>
-            <h1 className="works-title">Works</h1>
+            <h1 className={`works-title ${isDarkMode ? "" : "light-text"}`}>Works</h1>
     <Row>
          
       <Col lg={6}>
