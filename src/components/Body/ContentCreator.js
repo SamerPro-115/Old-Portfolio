@@ -54,7 +54,7 @@ const ContentCreator = (prop) => {
           <video 
             ref={videoRef}
             onClick={() => handleVideoClick(index)}
-            style={{position: "relative"}}
+            style={{position: "relative", borderRadius: "10px"}}
             className='video'
             preload='metadata'
             poster={`/portfolio/th-${index + 1}.png`}
