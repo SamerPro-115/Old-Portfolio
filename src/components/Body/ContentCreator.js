@@ -57,6 +57,7 @@ const ContentCreator = (prop) => {
             style={{position: "relative"}}
             className='video'
             preload='metadata'
+            poster={`/portfolio/th-${index + 1}.png`}
           >
             <source src={`/portfolio/v-${index + 1}.mp4`} type='video/mp4' />
           </video>
