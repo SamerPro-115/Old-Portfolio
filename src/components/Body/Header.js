@@ -1,4 +1,4 @@
-import {Image, Row, Col} from 'react-bootstrap';
+import {Image} from 'react-bootstrap';
 import {BsTwitter} from "react-icons/bs"
 import { FaTiktok } from "react-icons/fa";
 import {BsDiscord} from "react-icons/bs"
