@@ -61,7 +61,6 @@ transition: ease-in-out 0.5s;
    padding: 30px;
 }
 .social-button{
-    width: max-content;
     padding: 24px;
 }
 .social-logo{
@@ -196,13 +195,16 @@ text-align: left;
 
 @media screen and (max-width: 992px) {
     .logo{
-        width: 40%;
+        width: 33%;
     }
     .web-name{
         font-size: 2.5rem;
     }
     .web-image{
         margin: 10px;
+    }
+    .social-logo{
+        width: 3.25%;
     }
 }
 
@@ -212,6 +214,9 @@ text-align: left;
     }
     .info{
         margin-bottom: 7rem;
+    }
+    .social-logo{
+        width: 3.5%;
     }
 }
 
@@ -260,7 +265,10 @@ text-align: left;
         margin-top: 0px;
     }
     .social-logo{
-        width: 6%;
+        width: 3.75%;
+    }
+    .social-button{
+        padding: 19px;
     }
     .videos{
         margin-left: auto;
