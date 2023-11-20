@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4c33f432.css",
-    "main.js": "/portfolio/static/js/main.cb5209e8.js",
-    "static/js/787.5809834d.chunk.js": "/portfolio/static/js/787.5809834d.chunk.js",
-    "index.html": "/portfolio/index.html",
-    "main.4c33f432.css.map": "/portfolio/static/css/main.4c33f432.css.map",
-    "main.cb5209e8.js.map": "/portfolio/static/js/main.cb5209e8.js.map",
-    "787.5809834d.chunk.js.map": "/portfolio/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/SamerPro/static/css/main.3785e0ba.css",
+    "main.js": "/SamerPro/static/js/main.93dbacb2.js",
+    "static/js/787.5809834d.chunk.js": "/SamerPro/static/js/787.5809834d.chunk.js",
+    "index.html": "/SamerPro/index.html",
+    "main.3785e0ba.css.map": "/SamerPro/static/css/main.3785e0ba.css.map",
+    "main.93dbacb2.js.map": "/SamerPro/static/js/main.93dbacb2.js.map",
+    "787.5809834d.chunk.js.map": "/SamerPro/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c33f432.css",
-    "static/js/main.cb5209e8.js"
+    "static/css/main.3785e0ba.css",
+    "static/js/main.93dbacb2.js"
   ]
 }
