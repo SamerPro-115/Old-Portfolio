@@ -9,6 +9,7 @@ import Header from './components/Body/Header.js'
 import AboutMe from "./components/Body/AboutMe.js"
 import WhatIUseInCoding from "./components/Body/WhatIUseInCoding.js"
 import Works from "./components/Body/Works"
+import Contact from "./components/Body/Contact"
 import ContentCreator from "./components/Body/ContentCreator"
 import Animation from './components/Body/Animation';
 import Content from "./components/Body/Content.js"
@@ -36,6 +37,7 @@ function App() {
           <WhatIUseInCoding />
           <Works />
           <ContentCreator />
+          <Contact />
         </Body>
       </Content>
     </DarkModeProvider>

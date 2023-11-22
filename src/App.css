@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-
+html{
+    height: 100%;
+}
 body{
+    position: relative;
     font-family:'Roboto';
     overflow-x: hidden !important;
     
+}
+.overlay {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.row>*{
+    padding-right: 0px;
+    padding-left: 0px;
 }
 p{
     font-family: monospace !important;
@@ -64,7 +80,7 @@ transition: ease-in-out 0.5s;
     padding: 24px;
 }
 .social-logo{
-    width: 2%;
+    width: 3.75%;
     height: 100%;
     color: #1186a3;
 transition: ease-in-out 0.5s;
@@ -192,7 +208,189 @@ text-align: left;
     color: #d0d0d0;
     font-weight: bold;
 }
+#fourth-section{
+    padding-bottom: 120px;
+}
+.contact-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 50%;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .contact-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .contact-box .user-box {
+    position: relative;
+  }
+  .contact-box .message-box {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .contact-box .user-box input,textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .contact-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .contact-box .message-box label{
+    position: absolute;
+    top:-30px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .contact-box .user-box input:focus ~ label,
+  .contact-box .user-box input:valid ~ label,
+  .contact-box .message-box textarea:focus ~ label,
+  .contact-box .message-box textarea.has-value ~ label,
+  .contact-box .user-box input.has-value ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  
+  .contact-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+    background: black;
+    border-radius: 5px;
+  }
+  
+  .contact-box button:hover {
+    background: #37c3d6;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #2e3737, 0 0 25px #5b6b6c, 0 0 50px #75a1a3, 0 0 100px #404849;
+  }
+  
+  .contact-box button span {
+    position: absolute;
+    display: block;
+  }
+  
+  .contact-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .contact-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .contact-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .contact-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
 
+  @media screen and (max-width: 1400px) {
+    .contact-box{
+        width: 70%; 
+    }
+  }
 @media screen and (max-width: 992px) {
     .logo{
         width: 33%;
@@ -204,7 +402,10 @@ text-align: left;
         margin: 10px;
     }
     .social-logo{
-        width: 3.25%;
+        width: 6.25%;
+    }
+    .contact-box{
+        width: 100%; 
     }
 }
 
@@ -216,7 +417,7 @@ text-align: left;
         margin-bottom: 7rem;
     }
     .social-logo{
-        width: 3.5%;
+        width:7.50%;
     }
 }
 
@@ -265,7 +466,7 @@ text-align: left;
         margin-top: 0px;
     }
     .social-logo{
-        width: 5.5%;
+        width: 4.5%;
     }
     .social-button{
         padding: 19px;
@@ -275,6 +476,14 @@ text-align: left;
         margin-right: auto;
         margin-bottom: 50px;
     }
+    .first-social-icons-xs{
+        text-align: center !important;
+    }
+    .second-social-icons-xs{
+        margin-top: 10px;
+        text-align: center !important;
+    }
+   
     
 }
 
