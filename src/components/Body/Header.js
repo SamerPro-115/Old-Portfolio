@@ -26,7 +26,7 @@ const Header = () => {
             <a href='https://www.tiktok.com/@samerpro_' rel='noreferrer' target='_blank' className='social-button'>
                 <FaTiktok className={`animate__animated animate__backInLeft social-logo ${isDarkMode ? "" : "social-logo-light"} `} />
             </a>
-            <a href='https://discord.gg/ZRwX4duYKZ' rel='noreferrer' target='_blank' className='social-button'>
+            <a href='https://discord.gg/NsJMVkAJrs' rel='noreferrer' target='_blank' className='social-button'>
                 <BsDiscord className={`animate__animated animate__backInUp social-logo ${isDarkMode ? "" : "social-logo-light"} `} />
             </a>
             </Col>
