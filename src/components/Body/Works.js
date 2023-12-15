@@ -13,11 +13,11 @@ const Works = (prop) => {
     <Row>
          
       <Col lg={6}>
-        <Image width={"65%"} src='/portfolio/7ml-with-us.png' className='web-image' alt='download' layout="responsive" />
+        <Image width={"65%"} src='/7ml-with-us.png' className='web-image' alt='download' layout="responsive" />
       </Col>
 
       <Col lg={6} >
-        <Image width={"65%"} src='/portfolio/coffee-h.png' className='web-image' alt='coffee' layout="responsive" />
+        <Image width={"65%"} src='/coffee-h.png' className='web-image' alt='coffee' layout="responsive" />
       </Col>
     </Row>
     </div>
