@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "homepage": "http://samer132344.github.io/portfolio",
+>>>>>>> 7972e17de392a097319ae29b8212070e6c0a772a
   "name": "personal-website",
   "version": "0.1.0",
   "dependencies": {
