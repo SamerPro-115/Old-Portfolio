@@ -386,6 +386,8 @@ text-align: left;
     }
   }
 
+ 
+
   @media screen and (max-width: 1400px) {
     .contact-box{
         width: 70%; 
@@ -407,6 +409,11 @@ text-align: left;
     .contact-box{
         width: 100%; 
     }
+    .third-image{
+        width: 90%;
+        margin-top: 15px !important;
+    }
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -483,7 +490,7 @@ text-align: left;
         margin-top: 10px;
         text-align: center !important;
     }
-   
+    
     
 }
 
