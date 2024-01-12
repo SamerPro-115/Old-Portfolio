@@ -37,7 +37,7 @@ function App() {
           <WhatIUseInCoding />
           <Works />
           <ContentCreator />
-          {/* <Contact /> */}
+          <Contact />
         </Body>
       </Content>
     </DarkModeProvider>
