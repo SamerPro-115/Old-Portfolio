@@ -6,8 +6,6 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const [isInputValid, setIsInputValid] = useState(false);
   const [isTextareaValid, setIsTextareaValid] = useState(false);
-  const [inputValue, setInputValue] = useState('');
-  const [textAreaValue, setTextAreaValue] = useState('');
   const inputRef = useRef(null);
   const form = useRef();
 
@@ -81,25 +79,7 @@ const Contact = () => {
     }
 
   };
-  const handleInputChangeOnlyText = (event) => {
-    // Allow only letters
-    const filteredValue = event.target.value.replace(/[^a-zA-Z\s]/g, '');
-    setInputValue(filteredValue);
-  };
 
-  const handleTextareaChange = (event) => {
-    const emailValue = event.target.value;
-    const filteredValue = event.target.value.replace(/[^a-zA-Z\s]/g, '');
-    setTextAreaValue(filteredValue);
-    if(emailValue.length >0) {
-        setIsTextareaValid(true);
-    } else {
-        setIsTextareaValid(false);
-    }
-
-    
-
-  };
 
     return(
     <ScrollTriggeredSection sectionId={'fourth-section'}>
@@ -108,7 +88,7 @@ const Contact = () => {
   <h2>Contact</h2>
   <form ref={form} onSubmit={sendEmail}>
     <div className='user-box'>
-      <input type="text" value={inputValue} onChange={handleInputChangeOnlyText} autoComplete='off' name="user_name" required/>
+      <input type="text"  autoComplete='off' name="user_name" required/>
       <label>Name</label>
     </div>
     <div className='user-box'>
@@ -116,7 +96,7 @@ const Contact = () => {
       <label>Email</label>
     </div>
     <div className='message-box'>
-    <textarea name="message" value={textAreaValue} onChange={handleTextareaChange} className={isTextareaValid ? 'has-value' : ''} rows={3} cols={6} required />
+    <textarea name="message" className={isTextareaValid ? 'has-value' : ''} rows={3} cols={6} required />
     <label>Message</label>
     </div>
     <button type='submit' id='submit-form'>
