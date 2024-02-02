@@ -16,7 +16,7 @@ const Header = () => {
           <Image
             src="/samerPro.jpg"
             className={`animate__animated animate__backInDown logo ${isDarkMode ? "" : "logo-light"}`}
-            alt="Image"
+            alt="logo"
           />
           <Row className='social-icons'>
             <Col className='first-social-icons-xs' lg={6} sm={6} xs={12} style={{"textAlign": "right"}}>

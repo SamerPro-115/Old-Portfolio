@@ -152,6 +152,7 @@ text-align: left;
 }
 .web-image{
     border-radius: 20px;
+    filter: brightness(0.9);
 }
 .content-creator{
     color: rgb(242, 240, 240);
@@ -385,6 +386,22 @@ text-align: left;
       bottom: 100%;
     }
   }
+  .visit-btn{
+    width: 20%;
+    border: none;
+    background: #146d6f;
+    color: white;
+    transition: ease-in-out 0.3s;
+    font-size: 0.9rem;
+  }
+  .visit-btn:hover{
+    background: rgb(113 76 127);
+    font-size: 1.1rem;
+  }
+  .publish-soon:disabled{
+    background: gray;
+    border: none;
+  }
 
  
 
@@ -412,6 +429,13 @@ text-align: left;
     .third-image{
         width: 90%;
         margin-top: 15px !important;
+    }
+    .visit-btn{
+        margin-bottom: 30px !important;
+    }
+    .publish-soon{
+        margin-bottom: 30px !important;
+
     }
    
 }

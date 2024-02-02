@@ -35,11 +35,11 @@ const Animation = (prop) => {
                 },
                 modes: {
                     push: {
-                        quantity: 4,
+                        quantity: 0,
                     },
                     repulse: {
                         distance: 200,
-                        duration: 0.4,
+                        duration: 0.1,
                     },
                 },
             },
@@ -49,10 +49,10 @@ const Animation = (prop) => {
                 },
                 links: {
                     color: "#ffffff",
-                    distance: 150,
+                    distance: 120,
                     enable: true,
                     opacity: 0.5,
-                    width: 1,
+                    width: 0.5,
                 },
                 move: {
                     direction: "none",
